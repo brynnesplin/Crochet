@@ -18,7 +18,7 @@ namespace Crochet.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Pricing()
         {
             return View();
         }

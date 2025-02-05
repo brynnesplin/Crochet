@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Pricing";
+}
+<h1>The Hook Nook: Pricing</h1>
+
+<p>
+    Are you interested in learning how to crochet? I’d love to help you along the way, whether you’re a
+    beginner or looking to refine your skills. Together, we can make your crochet journey fun and rewarding!
+</p>
+
+<h2>Get a Quote:</h2>
+<form id="pricing">
+    <div style="margin-top: 20px" class="form-group">
+        <label for="hrs">Hours:</label>
+        <input id="hrs" type="number" min="0" />
+        <span id="hrs-error" class="erorr-msg" style="color: red; display: none">Please enter a valid number of hours</span>
+    </div>
+
+    <div style="margin-top: 20px" class="form-group">
+        <textarea id="rate" readonly>Rate: $20/hour</textarea>
+    </div>
+
+    <div style="margin-top: 10px" class="form-group">
+        <button type="button" onclick="getQuote()">Get Quote!</button>
+    </div>
+
+</form>
+<p style="margin-top: 20px">Quote:</p>
+<textarea readonly id="quote"></textarea>
+
